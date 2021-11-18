@@ -9,7 +9,7 @@ function ProfileScreen({navigation}) {
         <Appbar.Content title="Profile" />
       </Appbar.Header>
 
-      <Button icon="content-save" mode="contained" onPress={() => navigation.navigate('HomeScreen')} style={{margin:10}}>
+      <Button icon="arrow-left" mode="contained" onPress={() => navigation.navigate('HomeScreen')} style={{margin:10}}>
         Kembali
       </Button>
     </>
