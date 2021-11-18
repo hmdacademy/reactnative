@@ -1,7 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { DefaultTheme, Provider as PaperProvider } from 'react-native-paper';
-import Home from './screen/Home';
+
+import MainNavigation from './navigation/MainNavigation';
 
 const theme = {
   ...DefaultTheme,
@@ -13,11 +14,13 @@ const theme = {
   },
 };
 
-export default function App() {
+function App() {
   return (
     <PaperProvider theme={theme}>
       <StatusBar style="dark" />
-      <Home />
+      <MainNavigation />
     </PaperProvider>
   );
 }
+
+export default App;
