@@ -1,7 +1,7 @@
 import React from 'react';
 import { Appbar, Button } from 'react-native-paper';
 
-export default function App() {
+function Home() {
   return (
     <>
       <Appbar.Header>
@@ -16,3 +16,5 @@ export default function App() {
     </>
   );
 }
+
+export default Home;
