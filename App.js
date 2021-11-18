@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { DefaultTheme, Provider as PaperProvider } from 'react-native-paper';
 
-import StackNavigation from './navigation/StackNavigation';
+import BottomTabNavigation from './navigation/BottomTabNavigation';
 
 const theme = {
   ...DefaultTheme,
@@ -18,7 +18,7 @@ function App() {
   return (
     <PaperProvider theme={theme}>
       <StatusBar style="dark" />
-      <StackNavigation />
+      <BottomTabNavigation />
     </PaperProvider>
   );
 }

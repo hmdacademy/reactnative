@@ -5,12 +5,11 @@ function ProfileScreen({navigation}) {
   return (
     <>
       <Appbar.Header>
-        <Appbar.BackAction onPress={() => navigation.goBack()} />
         <Appbar.Content title="Profile" />
       </Appbar.Header>
 
-      <Button icon="content-save" mode="contained" onPress={() => navigation.navigate('HomeScreen')} style={{margin:10}}>
-        Kembali
+      <Button icon="arrow-right" mode="contained" onPress={() => navigation.navigate('ProfileDetailScreen')} style={{margin:10}}>
+        Go to Detail
       </Button>
     </>
   );

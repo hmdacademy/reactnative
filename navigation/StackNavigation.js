@@ -8,14 +8,12 @@ import ProfileScreen from '../screen/ProfileScreen';
 
 function StackNavigation() {
   return (
-    <>
-      <NavigationContainer>
-        <Stack.Navigator screenOptions={{headerShown:false}}>
-          <Stack.Screen name="HomeScreen" component={HomeScreen} />
-          <Stack.Screen name="ProfileScreen" component={ProfileScreen} />
-        </Stack.Navigator>
-      </NavigationContainer>
-    </>
+    <NavigationContainer>
+      <Stack.Navigator screenOptions={{headerShown:false}}>
+        <Stack.Screen name="HomeScreen" component={HomeScreen} />
+        <Stack.Screen name="ProfileScreen" component={ProfileScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 
